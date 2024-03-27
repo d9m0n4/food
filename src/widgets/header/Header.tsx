@@ -1,3 +1,6 @@
+import Link from 'next/link'
+import React from 'react'
+
 export const Header = ({
   logo,
   navigation,
@@ -9,8 +12,10 @@ export const Header = ({
 }) => (
   <header>
     <div className='container'>
-      <div className='flex gap-4 items-center justify-between'>
-        <div className='flex'>{logo}</div>
+      <div className='flex gap-14 items-center justify-between'>
+        <div className='flex'>
+          <Link href={'/'}>{logo}</Link>
+        </div>
         <div className='flex mr-auto'>{navigation}</div>
         <div className='flex'>{userInfo}</div>
       </div>

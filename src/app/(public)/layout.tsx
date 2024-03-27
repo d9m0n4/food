@@ -1,7 +1,13 @@
+import CartIcon from '@/shared/ui/CartIcon/CartIcon'
+import Logo from '@/shared/ui/Logo/Logo'
+import ProfileIcon from '@/shared/ui/ProfileIcon/ProfileIcon'
+import { Header } from '@/widgets/header/Header'
+import AppNavigation from '@/widgets/navigation/AppNavigation'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import React from 'react'
+
 import '../globals.css'
-import { Header } from '@/widgets/header/Header'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,7 +24,19 @@ export default function RootLayout({
   return (
     <html lang='ru'>
       <body className={inter.className}>
-        <Header userInfo={'asasd'} />
+        <Header
+          userInfo={
+            <>
+              <CartIcon />
+              <div className='flex items-center gap-1'>
+                <ProfileIcon />
+                <span>Профиль</span>
+              </div>
+            </>
+          }
+          logo={<Logo />}
+          navigation={<AppNavigation />}
+        />
         {children}
       </body>
     </html>
