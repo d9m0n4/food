@@ -23,16 +23,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='ru'>
-      <body className={inter.className}>
+      <body className={`${inter.className} container mx-auto`}>
         <Header
           userInfo={
-            <>
-              <CartIcon />
+            <div className={'flex items-center gap-4 cursor-pointer'}>
               <div className='flex items-center gap-1'>
+                <CartIcon />
+                <span>1205 руб.</span>
+              </div>
+              <div className='flex items-center gap-1 cursor-pointer'>
                 <ProfileIcon />
                 <span>Профиль</span>
               </div>
-            </>
+            </div>
           }
           logo={<Logo />}
           navigation={<AppNavigation />}

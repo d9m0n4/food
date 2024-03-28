@@ -10,6 +10,15 @@ const config: Config = {
     './src/widgets/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    container: {
+      center: true,
+      screens: {
+        sm: '510px',
+        md: '690px',
+        lg: '930px',
+        xl: '1100px',
+      },
+    },
     extend: {
       colors: {
         accent: '#FF6800',

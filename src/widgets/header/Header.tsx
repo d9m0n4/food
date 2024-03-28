@@ -10,7 +10,7 @@ export const Header = ({
   navigation: React.ReactNode
   userInfo: React.ReactNode
 }) => (
-  <header>
+  <header className='my-4 sticky top-0 '>
     <div className='container'>
       <div className='flex gap-14 items-center justify-between'>
         <div className='flex'>
