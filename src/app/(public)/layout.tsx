@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='ru'>
-      <body className={`${inter.className} container mx-auto`}>
+      <body className={`${inter.className} `}>
         <Header
           userInfo={
             <div className={'flex items-center gap-4 cursor-pointer'}>
