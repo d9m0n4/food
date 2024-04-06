@@ -8,7 +8,7 @@ export default async function Layout({
 }) {
   return (
     <>
-      <Header variant='public' />
+      <Header variant='private' />
       {children}
     </>
   )
