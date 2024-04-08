@@ -1,5 +1,6 @@
 import Button from '@/shared/ui/Button/Button'
 import FoodMenu from '@/widgets/foodMenu/FoodMenu'
+import ProductsList from '@/widgets/productsList/ProductsList'
 import Image from 'next/image'
 
 import Img from '../../../public/h3.jpg'
@@ -18,6 +19,7 @@ export default function Home() {
         />
       </div>
       <FoodMenu />
+      <ProductsList />
       <p>kek</p>
       <Button>Заказать</Button>
     </main>
