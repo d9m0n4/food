@@ -1,3 +1,4 @@
+import { AppProvider } from '@/app/_providers/app-provider'
 import Footer from '@/widgets/footer/footer'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
@@ -20,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang='ru'>
       <body className={`${inter.className} `}>
-        {children}
+        <AppProvider>{children}</AppProvider>
         <Footer />
       </body>
     </html>
