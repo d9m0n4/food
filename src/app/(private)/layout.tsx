@@ -1,4 +1,5 @@
-import { Header } from '@/widgets/header/Header'
+import CheckAuth from '@/features/auth/chekAuth'
+import PrivateLayout from '@/widgets/layouts/PrivateLayout'
 import React from 'react'
 
 export default async function Layout({
@@ -7,9 +8,8 @@ export default async function Layout({
   children: React.ReactNode
 }) {
   return (
-    <>
-      <Header variant='private' />
-      {children}
-    </>
+    <PrivateLayout>
+      <CheckAuth>{children}</CheckAuth>
+    </PrivateLayout>
   )
 }

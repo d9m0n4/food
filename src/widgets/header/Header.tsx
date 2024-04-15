@@ -14,6 +14,8 @@ import Link from 'next/link'
 export const Header = ({ variant }: { variant: 'public' | 'private' }) => {
   const session = useAppSession()
   const signOut = useSignOut()
+
+  console.log(session)
   return (
     <Layout
       logo={<Logo />}

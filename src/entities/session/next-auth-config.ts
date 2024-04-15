@@ -5,6 +5,9 @@ import GitHubProvider from 'next-auth/providers/github'
 
 export const nextAuthConfig: AuthOptions = {
   adapter: PrismaAdapter(dbClient) as AuthOptions['adapter'],
+  pages: {
+    signIn: '/auth/sign-in',
+  },
   providers: [
     GitHubProvider({
       clientId: process.env.GITHUB_ID ?? '',

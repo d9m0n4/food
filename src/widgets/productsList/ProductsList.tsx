@@ -1,4 +1,4 @@
-import ProductItem from '@/entities/ProductItem/ProductItem'
+import ProductItem from '@/entities/productItem/ProductItem'
 import React from 'react'
 
 import imga2 from '../../../public/h3.jpg'
