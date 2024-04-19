@@ -62,6 +62,62 @@ const ProductsList = () => (
       description={'Рис, запеченный тунец, сыр, огурец, тобико'}
       price={350}
     />
+    <ProductItem
+      img={imga}
+      title={'Калифорния кани'}
+      info={'200 гр.'}
+      description={'Рис, запеченный тунец, сыр, огурец, тобико'}
+      price={350}
+    />
+    <ProductItem
+      img={imga2}
+      title={'Калифорния кани'}
+      info={'200 гр.'}
+      description={'Рис, запеченный тунец, сыр, огурец, тобико'}
+      price={350}
+    />
+    <ProductItem
+      img={imga}
+      title={'Калифорния кани'}
+      info={'200 гр.'}
+      description={'Рис, запеченный тунец, сыр, огурец, тобико'}
+      price={350}
+    />
+    <ProductItem
+      img={imga2}
+      title={'Калифорния кани'}
+      info={'200 гр.'}
+      description={'Рис, запеченный тунец, сыр, огурец, тобико'}
+      price={350}
+    />
+    <ProductItem
+      img={imga}
+      title={'Калифорния кани'}
+      info={'200 гр.'}
+      description={'Рис, запеченный тунец, сыр, огурец, тобико'}
+      price={350}
+    />
+    <ProductItem
+      img={imga2}
+      title={'Калифорния кани'}
+      info={'200 гр.'}
+      description={'Рис, запеченный тунец, сыр, огурец, тобико'}
+      price={350}
+    />
+    <ProductItem
+      img={imga}
+      title={'Калифорния кани'}
+      info={'200 гр.'}
+      description={'Рис, запеченный тунец, сыр, огурец, тобико'}
+      price={350}
+    />
+    <ProductItem
+      img={imga2}
+      title={'Калифорния кани'}
+      info={'200 гр.'}
+      description={'Рис, запеченный тунец, сыр, огурец, тобико'}
+      price={350}
+    />
   </div>
 )
 

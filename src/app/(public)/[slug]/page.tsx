@@ -4,7 +4,7 @@ import ProductsList from '@/widgets/productsList/ProductsList'
 import React from 'react'
 
 const BasePage = () => (
-  <div>
+  <div className='container'>
     <ProductsList />
   </div>
 )

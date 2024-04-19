@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='ru'>
-      <body className={`${inter.className} `}>
+      <body className={`${inter.className} flex flex-col min-h-dvh `}>
         <AppProvider>{children}</AppProvider>
         <Footer />
       </body>

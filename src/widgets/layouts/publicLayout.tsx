@@ -13,8 +13,8 @@ export default async function PublicLayout({
   return (
     <>
       <Header variant='public' />
-      <main className='flex min-h-screen flex-col items-center container mx-auto my-8'>
-        <div className='h-80 w-full relative'>
+      <main className='flex min-h-screen flex-col items-center mx-auto my-8'>
+        <div className='h-80 w-full relative container'>
           <Image
             src={Img}
             alt={'kek'}

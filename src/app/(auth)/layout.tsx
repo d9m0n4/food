@@ -1,9 +1,9 @@
-import PublicLayout from '@/widgets/layouts/PublicLayout'
+import AuthLayout from '@/widgets/layouts/authLayout'
 
 export default async function Layout({
   children,
 }: {
   children: React.ReactNode
 }) {
-  return <PublicLayout>{children}</PublicLayout>
+  return <AuthLayout>{children}</AuthLayout>
 }

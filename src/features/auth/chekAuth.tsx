@@ -13,6 +13,7 @@ const CheckAuth = ({ children }: { children: React.ReactNode }) => {
       signIn()
     }
   }, [isUnauth])
+
   return <div>{session.status === 'authenticated' && children}</div>
 }
 

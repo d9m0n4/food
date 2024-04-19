@@ -9,6 +9,7 @@ const config: Config = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/widgets/**/*.{js,ts,jsx,tsx,mdx}',
     './src/entities/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/features/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     container: {
@@ -24,6 +25,8 @@ const config: Config = {
       colors: {
         accent: '#FF6800',
         text: '#1E1819',
+        border: '#DBDBDB',
+        modal: 'rgba(8,8,8,.5)',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

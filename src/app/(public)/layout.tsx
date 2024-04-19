@@ -1,4 +1,4 @@
-import PublicLayout from '@/widgets/layouts/PublicLayout'
+import PublicLayout from '@/widgets/layouts/publicLayout'
 
 export default async function Layout({
   children,

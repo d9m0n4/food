@@ -7,7 +7,7 @@ const SignInForm = async () => {
     (provider) => provider.type === 'oauth'
   )
   return (
-    <div>
+    <div className=''>
       {oAuthProviders.map((provider) => (
         <ProviderButton key={provider.id} provider={provider} />
       ))}
