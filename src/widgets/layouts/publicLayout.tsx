@@ -26,8 +26,6 @@ export default async function PublicLayout({
         </div>
         <FoodMenu />
         {children}
-        <p>kek</p>
-        <Button>Заказать</Button>
       </main>
     </>
   )

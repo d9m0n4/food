@@ -33,6 +33,13 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      keyframes: {
+        hide: {
+          '0%': { opacity: '1' },
+          '50%': { opacity: '.5' },
+          '100%': { opacity: '0', display: 'none' },
+        },
+      },
     },
   },
   plugins: [],
