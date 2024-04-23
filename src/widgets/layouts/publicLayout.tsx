@@ -1,4 +1,3 @@
-import Button from '@/shared/ui/Button/Button'
 import FoodMenu from '@/widgets/foodMenu/FoodMenu'
 import { Header } from '@/widgets/header/Header'
 import Image from 'next/image'
