@@ -1,6 +1,7 @@
 import ProductModal from '@/entities/productItem/ui/productModal'
 import useOutSideClick from '@/shared/lib/hooks/useOutSideClick'
 import Button from '@/shared/ui/Button/Button'
+import Modal from '@/shared/ui/Modal/modal'
 import Image from 'next/image'
 import React, { useRef, useState } from 'react'
 import { Transition } from 'react-transition-group'
@@ -21,6 +22,11 @@ const ProductItem = ({
   const [isModalOpen, setIsModalOpen] = useState(false)
   const modalRef = useRef<HTMLDivElement>(null)
   useOutSideClick({ ref: modalRef, callback: () => setIsModalOpen(false) })
+
+  const handleAddToCart = (e: React.MouseEvent) => {
+    e.stopPropagation()
+  }
+
   return (
     <>
       <div
@@ -49,7 +55,9 @@ const ProductItem = ({
           <p>{description}</p>
         </div>
         <div className='flex justify-between items-center mt-4'>
-          <Button classnames={'flex'}>В корзину</Button>
+          <Button classnames={'flex'} onClick={handleAddToCart}>
+            В корзину
+          </Button>
           <div className='text-2xl font-medium'>
             <span>{price}₽</span>
           </div>
@@ -57,7 +65,9 @@ const ProductItem = ({
       </div>
 
       <Transition in={isModalOpen} timeout={200} unmountOnExit>
-        <ProductModal ref={modalRef} />
+        <Modal isOpen={isModalOpen}>
+          <ProductModal ref={modalRef} />
+        </Modal>
       </Transition>
     </>
   )
