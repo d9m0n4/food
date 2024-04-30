@@ -1,6 +1,6 @@
 'use client'
 
-import { SessionProvider } from '@/entities/session/session-provider'
+import { SessionProvider } from '@/entities/session/sessionProvider'
 import { queryClient } from '@/shared/api/query-client'
 import { QueryClientProvider } from '@tanstack/react-query'
 

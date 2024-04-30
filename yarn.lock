@@ -1177,6 +1177,18 @@ eastasianwidth@^0.2.0:
   resolved "https://registry.yarnpkg.com/eastasianwidth/-/eastasianwidth-0.2.0.tgz#696ce2ec0aa0e6ea93a397ffcf24aa7840c827cb"
   integrity sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==
 
+effector-react@^23.2.0:
+  version "23.2.0"
+  resolved "https://registry.yarnpkg.com/effector-react/-/effector-react-23.2.0.tgz#b0bbb09f8b786ba565f99829827c83ff3349b64d"
+  integrity sha512-e7tWJ+lpVKJpzS0UDR2Oi/0dAfvyDYyT44CWIFzBd8aJ7u4VXqP/3RJ4GCa3sH2g8Wffx6IA3BuTUGvgeH8ypg==
+  dependencies:
+    use-sync-external-store "^1.0.0"
+
+effector@^23.2.1:
+  version "23.2.1"
+  resolved "https://registry.yarnpkg.com/effector/-/effector-23.2.1.tgz#855766159b5bf3bf05937a0f272ad5943931cd3b"
+  integrity sha512-WoqZKLJKWOsq91hpxEpaVzIIlREVNNC5IxgRME8/oXvRmvxi+4ITzwxs9NEc1ygyeVLEKAA7zfpNA7eVJ6RmQg==
+
 electron-to-chromium@^1.4.668:
   version "1.4.715"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.715.tgz#bb16bcf2a3537962fccfa746b5c98c5f7404ff46"
@@ -3248,6 +3260,11 @@ uri-js@^4.2.2:
   integrity sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==
   dependencies:
     punycode "^2.1.0"
+
+use-sync-external-store@^1.0.0:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/use-sync-external-store/-/use-sync-external-store-1.2.2.tgz#c3b6390f3a30eba13200d2302dcdf1e7b57b2ef9"
+  integrity sha512-PElTlVMwpblvbNqQ82d2n6RjStvdSoNe9FG28kNfz3WiXilJm4DdNkEzRhCZuIDwY8U08WVihhGR5iRqAwfDiw==
 
 util-deprecate@^1.0.2:
   version "1.0.2"

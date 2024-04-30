@@ -1,4 +1,4 @@
-import { AppProvider } from '@/app/_providers/app-provider'
+import { AppProvider } from '@/app/_providers/appProvider'
 import Footer from '@/widgets/footer/footer'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'

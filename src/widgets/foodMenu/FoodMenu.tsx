@@ -1,21 +1,20 @@
 'use client'
 
-import { useHeightContext } from '@/shared/context/headerHeightContext'
 import FoodMenuList from '@/widgets/foodMenu/ui/FoodMenuList'
-import React, { useEffect, useRef } from 'react'
+import React, { useRef } from 'react'
 
 const FoodMenu = () => {
   const menuRef = useRef<HTMLDivElement>(null)
 
-  useEffect(() => {
-    if (!menuRef) return
-    window.addEventListener('scroll', () => {
-      console.log(menuRef.current?.getBoundingClientRect().top)
-    })
-    return () => {
-      window.removeEventListener('scroll', () => {})
-    }
-  }, [])
+  // useEffect(() => {
+  //   if (!menuRef) return
+  //   window.addEventListener('scroll', () => {
+  //     console.log(menuRef.current?.getBoundingClientRect().top)
+  //   })
+  //   return () => {
+  //     window.removeEventListener('scroll', () => {})
+  //   }
+  // }, [])
 
   return (
     <div

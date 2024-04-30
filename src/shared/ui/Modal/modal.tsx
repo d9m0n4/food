@@ -1,3 +1,5 @@
+'use client'
+
 import { Portal } from '@/shared/ui/Portal/portal'
 import React, { ReactElement, useEffect } from 'react'
 
@@ -12,7 +14,7 @@ const Modal = ({
     isOpen
       ? document.body.classList.add('overflow-hidden', 'pr-1.5')
       : document.body.classList.remove('overflow-hidden', 'pr-1.5')
-    return () => document.body.classList.remove('overflow-hidden')
+    return () => document.body.classList.remove('overflow-hidden', 'pr-1.5')
   }, [isOpen])
   return (
     <Portal>

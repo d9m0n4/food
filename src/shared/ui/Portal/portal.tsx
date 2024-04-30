@@ -1,12 +1,22 @@
 'use client'
 
-import { ReactElement } from 'react'
+import { ReactElement, useEffect, useState } from 'react'
 import { createPortal } from 'react-dom'
 
 export const Portal = ({
   children,
-  container = document.body,
+  container,
 }: {
   children: ReactElement
   container?: Element | DocumentFragment
-}) => createPortal(children, container)
+}) => {
+  const [isMounted, setIsMounted] = useState(false)
+
+  useEffect(() => {
+    setIsMounted(true)
+  }, [])
+
+  return isMounted
+    ? createPortal(children, container ? container : document.body)
+    : null
+}

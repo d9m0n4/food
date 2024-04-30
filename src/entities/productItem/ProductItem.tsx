@@ -1,10 +1,7 @@
-import ProductModal from '@/entities/productItem/ui/productModal'
-import useOutSideClick from '@/shared/lib/hooks/useOutSideClick'
+import { productModalOpen } from '@/shared/context/modals'
 import Button from '@/shared/ui/Button/Button'
-import Modal from '@/shared/ui/Modal/modal'
 import Image from 'next/image'
-import React, { useRef, useState } from 'react'
-import { Transition } from 'react-transition-group'
+import React from 'react'
 
 const ProductItem = ({
   img,
@@ -19,10 +16,6 @@ const ProductItem = ({
   description: string
   price: number
 }) => {
-  const [isModalOpen, setIsModalOpen] = useState(false)
-  const modalRef = useRef<HTMLDivElement>(null)
-  useOutSideClick({ ref: modalRef, callback: () => setIsModalOpen(false) })
-
   const handleAddToCart = (e: React.MouseEvent) => {
     e.stopPropagation()
   }
@@ -33,7 +26,7 @@ const ProductItem = ({
         className='flex flex-col gap-2 justify-between h-full
   p-3 cursor-pointer shadow-md rounded-xl
   hover:shadow-xl transition duration-300'
-        onClick={() => setIsModalOpen(true)}
+        onClick={() => productModalOpen()}
       >
         <div className='h-[125px] relative'>
           <Image
@@ -63,12 +56,6 @@ const ProductItem = ({
           </div>
         </div>
       </div>
-
-      <Transition in={isModalOpen} timeout={200} unmountOnExit>
-        <Modal isOpen={isModalOpen}>
-          <ProductModal ref={modalRef} />
-        </Modal>
-      </Transition>
     </>
   )
 }

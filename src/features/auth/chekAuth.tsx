@@ -1,6 +1,6 @@
 'use client'
 
-import { useAppSession } from '@/entities/session/use-app-session'
+import { useAppSession } from '@/entities/session/useAppSession'
 import { signIn } from 'next-auth/react'
 import { useEffect } from 'react'
 
